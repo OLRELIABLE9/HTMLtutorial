@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <section>
       <nav>
-        <img src="./assets/FES.svg" alt="" />
+        <img src="./assets/FES.svg" class="logo" alt="" />
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#discord">Discord</a></li>
@@ -16,74 +17,84 @@
         </ul>
       </nav>
       <header>
-        <div>
+        <div class="row">
+          <div>
           <h1>Best place to learn frontend</h1>
-          <p>
+          <p class="subheader">
             Go from being an abosulte beginner to being a pro with a simplifyed
             process
           </p>
           <button>Start now</button>
-        </div>
+          </div>
         <figure>
           <img src="./assets/laptop.png" alt="Home page image" />
         </figure>
+        </div>
       </header>
     </section>
     <main>
       <section id="about">
-        <h2>About</h2>
-        <div>
-          <p>
+        <h2 >About</h2>
+        <div class="row">
+        <div class="section__description"> 
+        <div class="section__description--wrapper">
+          <p class="section__description--para">
             Welcome to our frontend learning platform! We provide a simplified
             approach to mastering frontend development skills.
           </p>
-          <p>
+          <p class="section__description--para">
             Our courses are designed to take you from an absolute beginner to a
             proficient frontend developer. Join us and start your journey today!
           </p>
         </div>
-        <figure>
+        <figure class="about__img--wrapper">
           <img src="./assets/about.jpg" alt="Learning image" />
         </figure>
+        </div>
+        </div>
       </section>
 
       <section id="discord">
         <h2>Discord</h2>
-        <div>
-          <p>
+        <div class="row">
+        <div class="section__description"> 
+          <figure class="about__img--wrapper">
+          <img src="./assets/discord.png" alt="Discord image" />
+        </figure>
+        <div class="section__description--wrapper">
+          <p class="section__description--para">
             Join our Discord community to connect with other learners and get
             help with your frontend development journey.
           </p>
-          <p>
+          <p class="section__description--para">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque rem
             nobis in, at vel illum quidem ipsum tempora qui omnis soluta
             corrupti, sit eaque non. Inventore, accusantium voluptas. Sequi,
             dolores.
           </p>
         </div>
-        <figure>
-          <img src="./assets/discord.png" alt="Discord image" />
-        </figure>
+        </div>
+        </div>
       </section>
 
       <section id="contact">
         <h2>Contact</h2>
         <form action="">
           <span>Email</span>
-          <input type="email" placeholder="tyty@gmail.com" />
+          <input type="email" placeholder="Email" />
           <span>Message</span>
           <textarea placeholder="Your message here..."></textarea>
-          <button type="submit">Send</button>
+          <button type="submit">Contact us</button>
         </form>
       </section>
     </main>
     <footer>
-      <img src="./assets/FES.svg" alt="Footer logo" />
-      <div>
-        <a href="#about">About</a>
-        <a href="#discord">Discord</a>
-        <a href="#contact">Contact</a>
-        <a href="">Course</a>
+      <img class="footer__logo" src="./assets/FES.svg" alt="Footer logo" />
+      <div class="footer__links">
+        <a class="footer__links" href="#about">About</a>
+        <a class="footer__links" href="#discord">Discord</a>
+        <a class="footer__links" href="#contact">Contact</a>
+        <a class="footer__links" href="">Course</a>
       </div>
       <p>© 2024 Frontend Simplified. All rights reserved.</p>
     </footer>
