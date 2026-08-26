@@ -173,3 +173,11 @@ footer {
 .footer__links a {
   margin: 0 16px;
 }
+
+/* Media Queries for small phones, tablets, large phones */
+
+@media (max-width: 728 px){
+.row {
+  flex-direction: column;
+}
+}
